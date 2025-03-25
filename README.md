@@ -92,3 +92,17 @@ This repository provides a Python-based benchmark suite that compares **ElGamal*
 ## License
 
 MIT License
+
+## Dataset
+
+This project uses location data from the [GeoNames](https://www.geonames.org/) dataset.
+
+- **Dataset URL**: [GeoNames All Countries](https://download.geonames.org/export/dump/allCountries.zip)
+- **Format**: Tab-separated values (TSV), with latitude and longitude in columns 9 and 10.
+- **File**: `allCountries.txt` (included as a `.zip` file alongside the code)
+
+Make sure to extract `allCountries.txt` from the zip file and update the `FILE_PATH` in the script accordingly:
+
+```python
+FILE_PATH = "/path/to/allCountries.txt"
+
